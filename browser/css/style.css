@@ -1,6 +1,16 @@
 * {
   box-sizing: border-box; }
 
+.category-button {
+  border: 1px solid black;
+  background: none;
+  padding: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  outline: none; }
+  .category-button.active {
+    background: gainsboro; }
+
 .flash-card {
   width: 60%;
   height: 400px;
@@ -46,3 +56,23 @@
     color: green; }
   .answer-feedback.incorrect {
     color: red; }
+
+#statistics {
+  padding: 40px; }
+  #statistics:before, #statistics:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  #statistics:after {
+    clear: both; }
+  #statistics #scoreboard {
+    float: right;
+    margin: 0 auto; }
+    #statistics #scoreboard h3 {
+      margin-right: 40px;
+      float: left; }
+      #statistics #scoreboard h3:last-child {
+        margin-right: 0; }
+      #statistics #scoreboard h3 span {
+        font-weight: bold; }
